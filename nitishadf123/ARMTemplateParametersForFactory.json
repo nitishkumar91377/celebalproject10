@@ -5,8 +5,29 @@
 		"factoryName": {
 			"value": "nitishadf123"
 		},
-		"AzureBlobStorage_task1_connectionString": {
+		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"SQL_Server_LinkedService_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://storagefactorynitish.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0619-122043-xt7pha47"
+		},
+		"SQL_Server_LinkedService_properties_typeProperties_server": {
+			"value": "nitishserver123.database.windows.net"
+		},
+		"SQL_Server_LinkedService_properties_typeProperties_database": {
+			"value": "customerdb123"
+		},
+		"SQL_Server_LinkedService_properties_typeProperties_userName": {
+			"value": "nitishkumar7091"
 		}
 	}
 }
