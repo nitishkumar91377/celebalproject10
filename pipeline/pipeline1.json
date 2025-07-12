@@ -49,8 +49,8 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": {
-							"value": "SELECT * FROM cdc.fn_cdc_get_all_changes_dbo_Customer(\n  CONVERT(binary(10), '0x0000008700000930007D'), \n  sys.fn_cdc_get_max_lsn(), \n  'all'\n);\n",
+						"sqlReaderStoredProcedureName": {
+							"value": "@{activity('GetLastLSN_Customer').output.firstRow.LastLSN}",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -79,7 +79,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "syncmetadata",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				],
