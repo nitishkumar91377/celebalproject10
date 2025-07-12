@@ -144,7 +144,10 @@
 					"scripts": [
 						{
 							"type": "Query",
-							"text": "UPDATE dbo.SyncMetadata\nSET LastLSN = sys.fn_cdc_get_max_lsn()\nWHERE TableName = '@{pipeline().parameters.tableName}';\n"
+							"text": {
+								"value": "UPDATE dbo.SyncMetadata\nSET LastLSN = sys.fn_cdc_get_max_lsn()\nWHERE TableName = 'Customer';\n",
+								"type": "Expression"
+							}
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"
