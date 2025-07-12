@@ -1,0 +1,16 @@
+{
+	"name": "ds_product",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQL_Server_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Product"
+		}
+	}
+}
